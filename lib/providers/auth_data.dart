@@ -1,9 +1,6 @@
-import 'dart:io';
+
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:whatsapptest/models/user.dart';
-import 'package:whatsapptest/services/data_base_service.dart';
+import 'package:flutter/foundation.dart';
 import '../services/auth_service.dart';
 
 class AuthData extends ChangeNotifier {
@@ -11,15 +8,10 @@ class AuthData extends ChangeNotifier {
   String selectedPhoneCode = '';
   String phoneNumber = '';
   bool isVerified = false;
-//  String userName = '';
   String userId = '';
   bool codeSent = false;
-//  File profilePhoto ;
-//  String photoUrl;
-//  String profilePhotoUrl;
   AuthService _authService = AuthService();
-//  DataBaseService _dataBaseService = DataBaseService();
-//  User defaultUser;
+
 
   void onCountrySelected(String name, String phoneCode) {
     selectedCountry = name;
@@ -32,9 +24,6 @@ class AuthData extends ChangeNotifier {
     notifyListeners();
   }
 
-//  void onNameChanged(String name) {
-//    userName = name;
-//  }
 
   Future signWithOtp(String smsCode) async{
       final user = await _authService.signInWithOTP(smsCode);
@@ -57,18 +46,5 @@ class AuthData extends ChangeNotifier {
     _authService.verifyPhone(phoneNumber: number, whenCodeSent: _whenCodeSent);
   }
 
-//  Future setUpUser() async{
-//
-//    if (profilePhoto != null) {
-//      photoUrl = await  _dataBaseService.uploadFile(selectedFile: profilePhoto);
-//    }
-//    return _dataBaseService.setUpUser(
-//        userName: userName, phoneNumber: phoneNumber, senderId: senderId,photoUrl: photoUrl);
-//  }
-//
-//  handleImage(ImageSource source) async {
-//      profilePhoto = await _dataBaseService.getImage(source);
-//        notifyListeners();
-//      print('_selectedFile is $profilePhoto');
-//  }
 }
+
