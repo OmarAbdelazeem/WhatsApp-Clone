@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import './providers/data.dart';
+import './providers/auth_data.dart';
 import './providers/data_base.dart';
 import './screens/register_home_screen.dart';
 
