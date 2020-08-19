@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:whatsapptest/providers/data.dart';
+import '../providers/auth_data.dart';
 import 'package:whatsapptest/screens/ensure_number_dialog.dart';
 import '../widgets/column_text_widgets.dart';
 import '../widgets/choosing_country_widget.dart';
