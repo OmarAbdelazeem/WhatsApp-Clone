@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:whatsapptest/providers/data.dart';
+import '../providers/auth_data.dart';
 
 class EnsureNumberDialog extends StatelessWidget {
   @override
