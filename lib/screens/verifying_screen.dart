@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
 import 'package:provider/provider.dart';
-import '../providers/data.dart';
+import '../providers/auth_data.dart';
 import '../widgets/column_text_widgets.dart';
 import '../screens/alert_loading_verifying.dart';
 
