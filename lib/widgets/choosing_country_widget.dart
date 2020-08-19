@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../providers/data.dart';
+import '../providers/auth_data.dart';
 import '../screens/countries_codes_screen.dart';
 
 class ChoosingCountry extends StatelessWidget {
